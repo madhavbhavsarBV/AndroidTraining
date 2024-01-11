@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_retrofit"
+    app:startDestination="@id/retrofitFragment">
+
+    <fragment
+        android:id="@+id/retrofitFragment"
+        android:name="com.mad.androidtraining.aug8retrofit.fragments.RetrofitFragment"
+        android:label="fragment_retrofit"
+        tools:layout="@layout/fragment_retrofit" >
+        <action
+            android:id="@+id/action_retrofitFragment_to_getUsersFragment"
+            app:destination="@id/getUsersFragment" />
+        <action
+            android:id="@+id/action_retrofitFragment_to_getEntriesFragment"
+            app:destination="@id/getEntriesFragment" />
+        <action
+            android:id="@+id/action_retrofitFragment_to_postUsersFragment"
+            app:destination="@id/postUsersFragment" />
+        <action
+            android:id="@+id/action_retrofitFragment_to_postLoginFragment"
+            app:destination="@id/postLoginFragment" />
+        <action
+            android:id="@+id/action_retrofitFragment_to_postRegisterFragment"
+            app:destination="@id/postRegisterFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/getEntriesFragment"
+        android:name="com.mad.androidtraining.aug8retrofit.fragments.GetEntriesFragment"
+        android:label="fragment_get_entries"
+        tools:layout="@layout/fragment_get_entries" />
+    <fragment
+        android:id="@+id/getUsersFragment"
+        android:name="com.mad.androidtraining.aug8retrofit.fragments.GetUsersFragment"
+        android:label="fragment_get_users"
+        tools:layout="@layout/fragment_get_users" />
+    <fragment
+        android:id="@+id/postLoginFragment"
+        android:name="com.mad.androidtraining.aug8retrofit.fragments.PostLoginFragment"
+        android:label="fragment_post_login"
+        tools:layout="@layout/fragment_post_login" />
+    <fragment
+        android:id="@+id/postUsersFragment"
+        android:name="com.mad.androidtraining.aug8retrofit.fragments.PostUsersFragment"
+        android:label="fragment_post_users"
+        tools:layout="@layout/fragment_post_users" />
+    <fragment
+        android:id="@+id/postRegisterFragment"
+        android:name="com.mad.androidtraining.aug8retrofit.fragments.PostRegisterFragment"
+        android:label="fragment_post_register"
+        tools:layout="@layout/fragment_post_register" />
+</navigation>

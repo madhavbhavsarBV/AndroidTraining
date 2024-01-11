@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aug8retrofit.fragments.RetrofitFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvUrl1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="30dp"
+            android:text="@string/https_api_publicapis_org"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetEntries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/get_entries"
+            app:layout_constraintStart_toStartOf="@id/tvUrl1"
+            app:layout_constraintTop_toBottomOf="@id/tvUrl1" />
+
+        <com.google.android.material.textview.MaterialTextView
+            android:id="@+id/tvUrl2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/https_reqres_in"
+            app:layout_constraintStart_toStartOf="@id/btnGetEntries"
+            app:layout_constraintTop_toBottomOf="@id/btnGetEntries" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnGetUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/get_api_users"
+            app:layout_constraintStart_toStartOf="@id/tvUrl2"
+            app:layout_constraintTop_toBottomOf="@id/tvUrl2" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPostUsers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/post_api_users"
+            app:layout_constraintStart_toStartOf="@id/btnGetUsers"
+            app:layout_constraintTop_toBottomOf="@id/btnGetUsers" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPostRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/post_api_register"
+            app:layout_constraintStart_toStartOf="@id/btnPostUsers"
+            app:layout_constraintTop_toBottomOf="@id/btnPostUsers" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/btnPostLogin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/post_api_login"
+            app:layout_constraintStart_toStartOf="@id/btnPostRegister"
+            app:layout_constraintTop_toBottomOf="@id/btnPostRegister" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.core.widget.NestedScrollView>
