@@ -112,6 +112,8 @@ class MainActivity : AppCompatActivity() {
         // switched to dev branch
         //then commit "dev commit 1"
 
+        //solved bug 1
+
 
     }
 }
