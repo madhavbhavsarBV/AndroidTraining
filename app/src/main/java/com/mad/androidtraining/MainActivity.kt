@@ -73,6 +73,7 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this,CardGameActivity::class.java)
             startActivity(i)
         }
+        // bug6 solved
 
         val btnDialogs = findViewById<Button>(R.id.btnDialogs)
         btnDialogs.setOnClickListener {
