@@ -35,6 +35,7 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this,PatternsActivity::class.java)
             startActivity(i)
         }
+        // bug 11 solved
 
         val btnRecyclerView = findViewById<Button>(R.id.btnRecycler)
         btnRecyclerView.setOnClickListener {
