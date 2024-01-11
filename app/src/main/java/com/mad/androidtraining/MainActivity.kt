@@ -98,6 +98,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        // biug 3 solved
+
         val btnJson = findViewById<Button>(R.id.btnJson)
         btnJson.setOnClickListener {
             val i = Intent(this, JsonActivity::class.java)
