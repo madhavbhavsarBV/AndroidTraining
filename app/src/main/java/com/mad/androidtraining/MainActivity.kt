@@ -24,6 +24,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        // solved bug 10
+
         val btnInsta = findViewById<Button>(R.id.btnInsta)
         btnInsta.setOnClickListener {
             val i = Intent(this,InstagramActivity::class.java)
