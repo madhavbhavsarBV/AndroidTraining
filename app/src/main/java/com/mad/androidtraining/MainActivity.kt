@@ -103,7 +103,7 @@ class MainActivity : AppCompatActivity() {
             val i = Intent(this, JsonActivity::class.java)
             startActivity(i)
         }
-        // bug 2 solved
+        // bug 2 solved again
         val btnRetrofit = findViewById<Button>(R.id.btnRetrofit)
         btnRetrofit.setOnClickListener {
             val i = Intent(this, RetrofitActivity::class.java)
