@@ -98,7 +98,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
-        // biug 3 solved
+        // biug 3 solved again
 
         val btnJson = findViewById<Button>(R.id.btnJson)
         btnJson.setOnClickListener {
