@@ -92,6 +92,8 @@ class MainActivity : AppCompatActivity() {
             startActivity(i)
         }
 
+        // bug 5 solved
+
         val btnProfileFragment = findViewById<Button>(R.id.btnProfileFragment)
         btnProfileFragment.setOnClickListener {
             val i = Intent(this, ProfileFragmentActivity::class.java)
